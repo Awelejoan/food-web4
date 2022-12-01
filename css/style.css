@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'abelregular';
+    src: url('../font/abel-regular-webfont.woff2') format('woff2'),
+        url('../font/abel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pinyon_scriptregular';
+    src: url('../font/pinyonscript-regular-webfont.woff2') format('woff2'),
+        url('../font/pinyonscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'abelregular';
+    background-color:whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.fa-navicon{
+    display: none;
+}
+
+.logo img {
+    width: 40%;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px;
+}
+nav ul li a:hover{
+    color: red!important;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .shop-cart{
+    margin-left:15px ;
+    position: relative;
+    font-size: 1.8rem;
+}
+.fa-heart{
+    position: relative;
+    font-size: 1.8rem;
+}
+
+.left{
+    position: absolute;
+    right: 128px;
+    top: 32px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    padding: 2px 4px;
+    font-size: 12px;
+
+}
+.top{
+   font-size: 12px;
+    position: absolute;
+    right:10.8rem;
+    top: 32px;
+    color: white;
+    background-color: red;
+    border-radius: 20px;
+    padding: 2px 4px;
+} 
+
+.btn-section{
+    display: flex;
+}
+.hero-btn {
+    background-color: red;
+    padding: 15px 15px;
+    color: white;
+}
+
+.hero-amt {
+    color: yellow;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.hero-content {
+    color: white;
+    padding: 150px 100px;
+}
+.hero-amt{
+    margin-left: 5px;
+}
+
+
+.hero {
+    background: url('../images/banner.png')no-repeat center/cover;
+    height: 650px;
+}
+
+.img1 {
+    background: url('../images/002-checklist.png')no-repeat;
+    height: 170px;
+}
+.img2 {
+    background: url('../images/001-salary.png')no-repeat;
+    height: 170px;
+}
+.img3 {
+    background: url('../images/003-box.png')no-repeat;
+    height: 170px;
+}
+.ordercontainer{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -160px;
+    background-color: whitesmoke;
+}
+.card{
+    background-color: white;
+    padding:30px;
+    margin: 1px;
+
+}
+.food-title{
+    background-color: white;
+    padding: 20px;
+}
+
+.menu{
+    margin-top: 50px;
+    height: 140px;
+    background: url('../images/heading-bg.png')no-repeat center;
+}
+.menu h1{
+    font-family: 'pinyon_scriptregular';
+    font-weight: bolder;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.menupic1{
+    background: url('../images/beans-and-plain.jpg')no-repeat center/cover;
+    height: 280px;
+    position: relative;
+}
+
+.menupic2{
+    background: url('../images/whiterice-plaintain.jpg')no-repeat center/cover;
+    height: 280px;
+    position: relative;
+}
+.menupic3{
+    background: url('../images/boiledplantain-efo.jpg')no-repeat center/cover;
+    height: 280px;
+    position: relative;
+}
+.cart{
+    color: red;
+}
+footer img{
+width: 100%;
+}
+.star{
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    padding: 0 20px;
+    
+}
+
+.pages p{
+    color:black;
+    font-size: 20px;
+    line-height: 33px;
+}
+.collection{
+
+    margin: 3px;
+}
+.t-center{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.food-nav{
+    font-weight: bolder;
+    display: flex;
+    margin: 3px;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+}
+.badge2{margin-top: 15px;}
+
+.hero2{
+    background: url('../images/second-bg.png') no-repeat center/cover;
+    height: 250px;
+    color: white;
+    padding: 150px 100px;
+    margin-top: 80px;
+}
+.hero2 h1{
+    font-size: 50px;
+}
+.hero2 p{
+    margin-top: 30px;
+}
+.hero2-btn{
+    margin-top: 30px;
+}
+.hero h1{
+    font-size: 45px;
+}
+.hero p{
+    margin-top: 20px;
+}
+.btn-section{
+    margin-top: 20px;
+}
+.play-store{
+    margin-left: 5px;
+}
+.top-left{
+    margin: 10px;
+    font-weight: bold;
+}
+.footer-page{margin-top: 10px;}
+.menu-pasta{
+    margin-top: 20px;
+}
+.foot-badge2{
+    margin-top: 10px;
+}
+.footer{
+    padding: 80px 10px;
+}
+.footer-img{
+    border: 5px solid black;
+}
+@media only screen and (max-width:600px) {
+  .ordercontainer{
+    margin-top: 10px;
+  }  
+  .hero{
+    background: url('../images/mobile-banner.jpg') no-repeat center/cover;
+    height: 400px;
+  }
+  .hero-content{padding: 50px 50px;}
+  .hero h1{
+    font-size: 30px;
+  }
+  .strike{
+    margin-left: 5px;
+  }
+ .card{
+    margin: 5px;
+ }
+ .menu{
+    background-size: 400px;
+    padding: 50px;
+ }  
+ .hero2 h1{
+    font-size: 30px;
+ } 
+ .hero2{
+    height: 300px;
+    padding: 20px 10px;
+ } 
+}
+@media only screen and (max-width:900px){
+    nav ul{
+        display: block;
+     }
+     .nav-bar a{
+        line-height: 40px;
+     }
+     
+     .fa-navicon{
+        display: block;
+        font-size: 1.5rem;
+     }
+     .nav-bar.active{
+        height: 250px;
+     } 
+     .nav-bar{
+        position: absolute;
+        height:0px;
+        overflow: hidden;
+        background:whitesmoke;
+        width: 100%;
+        left: 0;
+        top: 100px;
+        opacity: 0.8;
+     }
+     .shopping-cart{
+        display: none;
+     }
+     .heart{
+        display: none;
+     }
+     .hero{
+        background: url('../images/mobile-banner.jpg') no-repeat center/cover;
+        height: 600px;
+      }
+
+      
+}
