@@ -29,7 +29,7 @@ body {
     display: none;
 }
 
-.logo img {
+.container img{
     width: 40%;
 
 }
@@ -199,6 +199,7 @@ width: 100%;
     padding: 0 20px;
     
 }
+.logo{line-height: 30px;}
 
 .pages p{
     color:black;
@@ -258,7 +259,7 @@ width: 100%;
 }
 .footer-page{margin-top: 10px;}
 .menu-pasta{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .foot-badge2{
     margin-top: 10px;
@@ -321,6 +322,7 @@ width: 100%;
         position: absolute;
         height:0px;
         overflow: hidden;
+        text-align: center;
         background:whitesmoke;
         width: 100%;
         left: 0;
