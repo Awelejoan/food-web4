@@ -56,7 +56,15 @@ input[type='text']{
 }
 #info{
     width: 100%;
+    background-color: rgb(189, 186, 186);    
 }
+#info::placeholder{
+    text-align: center;
+}
+#inputext{
+    width: 100%;
+}
+
 .summary{
     margin-top: 30px;
 }
@@ -68,4 +76,11 @@ input[type='text']{
 }
 .left{
     margin-left: 20px;
+}
+@media only screen and (max-width:600px) {
+    #inputext{margin-top: 5px;}
+    #info{
+        margin: 3px;
+    }
+
 }
