@@ -29,9 +29,49 @@ body {
     display: none;
 }
 
-.container img{
-    width: 40%;
+.fa-heart{
+    position: relative;
+    font-size: 1.8rem;
+    margin-top: 3px;
+    color: black;
+}
+.fa-shopping-cart{
+    position: relative;
+    font-size: 1.8rem;
+    margin-top: 3px;
+}
+.num{
+    background-color: red;
+    color: white;
+    border-radius: 35px;
+    padding: 5px 5px;
+    font-size: 10px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+} 
+.num2{
+    background-color: red;
+    color: white;
+    border-radius: 35px;
+    padding: 5px 5px;
+    font-size: 10px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+}
 
+
+.container img{
+    
+    width: 250px;
+
+}
+.footer-img {
+    background: url(../images/beans-and-plain.jpg) no-repeat center/cover;
+    height: 60px;
+    border: 5px solid black;
+    margin-top: 5px;
 }
 
 nav ul {
@@ -65,37 +105,6 @@ nav ul li a:hover{
     justify-content: space-between;
     align-items: center;
 }
- .shop-cart{
-    margin-left:15px ;
-    position: relative;
-    font-size: 1.8rem;
-}
-.fa-heart{
-    position: relative;
-    font-size: 1.8rem;
-}
-
-.left{
-    position: absolute;
-    right: 128px;
-    top: 32px;
-    color: white;
-    background-color: red;
-    border-radius: 20px;
-    padding: 2px 4px;
-    font-size: 12px;
-
-}
-.top{
-   font-size: 12px;
-    position: absolute;
-    right:10.8rem;
-    top: 32px;
-    color: white;
-    background-color: red;
-    border-radius: 20px;
-    padding: 2px 4px;
-} 
 
 .btn-section{
     display: flex;
@@ -186,9 +195,7 @@ nav ul li a:hover{
     height: 280px;
     position: relative;
 }
-.cart{
-    color: red;
-}
+
 footer img{
 width: 100%;
 }
@@ -261,6 +268,7 @@ width: 100%;
 .menu-pasta{
     margin-top: 30px;
 }
+.cart{color: red;}
 .foot-badge2{
     margin-top: 10px;
 }
@@ -269,6 +277,10 @@ width: 100%;
 }
 .footer-img{
     border: 5px solid black;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 @media only screen and (max-width:600px) {
   .ordercontainer{
@@ -302,43 +314,53 @@ width: 100%;
  .hero-btn{
     border: none;
  }
+ .food-title{
+    font-size: 18px;
+ }
+ .menu{
+    background-size: 340px;
+    padding: 10px 0;
+    
+ }
+
 }
 @media only screen and (max-width:900px){
     nav ul{
         display: block;
      }
      .nav-bar a{
-        line-height: 40px;
+        line-height: 30px;
+     }
+     .btn-icon{
+        border: 1px solid rgb(207, 205, 205);
+        border-radius: 5px;
+        margin-top: 10px;
      }
      
      .fa-navicon{
         display: block;
         font-size: 1.5rem;
+        padding: 10px 10px;
      }
      .nav-bar.active{
-        height: 250px;
+        height: 270px;
      } 
      .nav-bar{
         position: absolute;
         height:0px;
         overflow: hidden;
-        text-align: center;
         background:whitesmoke;
         width: 100%;
         left: 0;
         top: 100px;
         opacity: 0.8;
      }
-     .shopping-cart{
-        display: none;
-     }
-     .heart{
-        display: none;
-     }
+    
      .hero{
         background: url('../images/mobile-banner.jpg') no-repeat center/cover;
         height: 600px;
       }
+      
 
       
 }

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>checkdetail</title>
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/checkdetail.css">
+</head>
+
+<body class="bg-light">
+  <header>
+    <div class="container nav">
+      <img class="img nav-img" src="./images/logo.png" alt="">
+      <div class="icon">
+        <button class="icon-btn"><i class="fa fa-navicon"></i></button>
+      </div>
+
+      <nav class="nav-bar">
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-heart">
+                <p class="num">20</p>
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-shopping-cart">
+                <p class="num2">25</p>
+              </i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <div class="hero">
+    <h1 class="text-center">Checkout</h1>
+  </div>
+  <div class="container">
+    <div class="row details">
+      <div class="col-md-6 col-sm-12 col-xs-12">
+
+        <form action="post" id="form">
+          <h1>Customer's Details</h1>
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <label>Email Address*</label><br>
+              <input class="form-control add" type="text">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <label>Phone*</label><br>
+              <input class="form-control add" type="text">
+            </div>
+          </div>
+
+          <h1>Delivery Info</h1>
+          <div class="row">
+            <div class="form-check col-md-2 col-sm-4 col-xs-4">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label">
+                Delivery
+              </label>
+            </div>
+            <div class="form-check col-md-2 col-sm-4 col-xs-4">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label">
+                Pickup
+              </label>
+            </div>
+
+            <div class="form-check col-md-2 col-sm-4 col-xs-4">
+              <input class="form-check-input" type="radio">
+              <label class="form-check-label">
+                Eat In
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label for="inputCity" class="form-label">Select Delivery Time Slot</label><br>
+              <select id="inputState" class="form-select">
+                <option selected>Select Time</option>
+                <option>10:00-12:00am</option>
+                <option>12:00-02:00pm</option>
+                <option>02:00-05:00pm</option>
+              </select>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <label for="inputState" class="form-label">Select Delivert District</label><br>
+              <select id="inputState" class="form-select">
+                <option selected>Select Delivery District</option>
+                <option>Ikeja</option>
+                <option>Ayobo</option>
+                <option>Iyana-ipaja</option>
+                <option>lekki</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <label class="form-label">Delivery Address*</label><br>
+            <input type="text" class="form-control" placeholder="Delivery Address">
+          </div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <label class="form-label">Notes/Extra Info*</label><br>
+            <input type="text" class="form-control" placeholder="Any Extra Information">
+          </div>
+
+          <h1>Payment Options</h1>
+          <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Cash On Delivery
+            </label><br>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Pay With Paystack
+            </label><br>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Pay With Wallet
+            </label>
+          </div>
+
+
+          <div class="col-12">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="col-md-5 col-sm-12 col-xs-12" id="cart">
+        <h1>Cart Summary</h1>
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-xs-8">
+            <div class="row" id="summary">
+              <img class="col-md-6 col-sm-6 col-xs-6" id="summary-img" src="./images/beans-and-plain.jpg"
+                alt="beans-and-plain">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <p>Beans(Plain)X1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-3" id="summary">
+            <h4 class="price">#1200</h4>
+          </div>
+        </div>
+        <hr class="rule">
+
+        <div class="row" id="summary">
+          <div class="col-md-8 col-sm-8 col-xs-8">
+            <div class="row">
+              <img class="col-md-6 col-sm-6 col-xs-6" id="summary-img" src="./images/beans-and-plain.jpg"
+                alt="beans-and-plain">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <p>Beans(Plain)X1</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-3">
+            <h4 class="price">#1200</h4>
+          </div>
+        </div>
+        <hr class="rule">
+
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-6">
+            <div class="row" id="summary">
+              <div class="col-md-3 col-sm-4 col-xs-4 "></div>
+              <div class="col-md-6 col-sm-8 col-xs-8">
+                Total
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-6" id="summary">
+            <h4>#2400</h4>
+          </div>
+        </div>
+        <hr class="rule">
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class=" f-head">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <div class="f-content">
+            <p>One is to focus on the quality of your meat. <br>
+              If you can call out organic beef,sustainable farming.
+            </p>
+            <div><strong>Phone:</strong>08105798005</div>
+            <div><strong>Email:</strong>awele@gmail.com</div>
+            <div class="icons">
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 footer-page Page">
+
+          <h3>Pages</h3>
+          <div class="pages">
+            <p>Home</p>
+            <p>About</p>
+            <p>Shot</p>
+            <p>Login</p>
+            <p>Register</p>
+          </div>
+
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12 Menu-pasta">
+          <h3>Menu Pastas</h3>
+          <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3  foot-badge2">
+              <div class="footer-img"></div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8 top-left">
+              <p>Barbecue Burgers With Sweet Chili Mayo</p>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 foot-badge2">
+              <div class="footer-img"></div>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8 top-left">
+              <p>Barbecue Burgers With Sweet Chili Mayo</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 footer-page">
+
+          <h3>Pages</h3>
+          <div class="pages">
+            <p>Home</p>
+            <p>About</p>
+            <p>Shot</p>
+            <p>Login</p>
+            <p>Register</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <p class="t-center">Copyright 2022 @ Theme Created By ScriptBundle. All Rights Reserved </p>
+  </footer>
+  <script>
+    const Btn = document.querySelector('.fa-navicon');
+    const Navbar = document.querySelector('.nav-bar');
+    Btn.addEventListener('click', function () {
+      Navbar.classList.toggle('active')
+    })
+  </script>
+</body>
+
+</html>
