@@ -31,6 +31,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Shop</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkdetail.html">Checkout</a>
+                    </li>
                     <li>
                         <a href="#">
                             <i class="fa fa-heart">
@@ -218,7 +221,13 @@
 
         <p class="t-center">Copyright 2022 @ Theme Created By ScriptBundle. All Rights Reserved </p>
     </footer>
-
+    <script>
+        const Btn = document.querySelector('.fa-navicon');
+        const Navbar = document.querySelector('.nav-bar');
+        Btn.addEventListener('click', function () {
+          Navbar.classList.toggle('active')
+        })
+      </script>
 </body>
 
 </html>
