@@ -1,0 +1,71 @@
+.img1 {
+    background: url('../images/boiledplantain-efo.jpg')no-repeat center/cover;
+    height: 300px;
+}
+
+.imgb {
+    background: url('../images/freshbread.jpg')no-repeat center/cover;
+    height: 100px;
+    margin: 5px;
+}
+
+.amount {
+    display: flex;
+    margin-top: 20px;
+
+}
+.btn{
+    background-color: red;
+    padding: 10px 10px;
+    color: white;
+}
+input[type='text']{
+    width: 200px;
+}
+
+.price {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    margin-top: 10px;
+}
+
+.price2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.lorem{
+    font-size: 12px;
+}
+.lo2{
+    margin-top: 3px;
+}
+.img2 {
+    background: url('../images/boiledplantain-efo.jpg')no-repeat center/cover;
+    height: 55px;
+}
+.title{
+    margin-left: 10px;
+}
+.details{
+    margin: 2px;
+}
+#info{
+    width: 100%;
+}
+.summary{
+    margin-top: 30px;
+}
+.rice{
+    margin-left: 20px;
+}
+.food-detail{
+    margin-top: 10px;
+}
+.left{
+    margin-left: 20px;
+}
